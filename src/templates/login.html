@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellmapp - Iniciar sesión</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/login.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="login-container">
+        <div class="map-container">
+            <img src="../static/img/wellmap_2.svg" alt="wellmap">
+        </div>
+
+        <h1 class="app-name">Wellmapp</h1>
+
+        <form action="/login" method="POST">
+            <div class="input-field">
+                <span class="icon user-icon"><i class="fas fa-user"></i></span>
+                <input type="text" placeholder="Usuario" id="username" name="username" required>
+            </div>
+            <div class="input-field">
+                <span class="icon lock-icon"><i class="fas fa-lock"></i></span>
+                <input type="password" placeholder="Contraseña" id="password" name="password" required>
+                <span class="password-toggle" id="togglePassword"><i class="fas fa-eye"></i></span>
+            </div>        
+
+            <button class="login-btn" type="submit">Iniciar sesión</button>
+        </form>
+
+        <div class="terms">
+            Al continuar, aceptas los <a href="#">términos de servicio</a> y la <a href="#">política de privacidad</a> de Wellmapp.
+        </div>
+    </div>
+</body>
+</html>

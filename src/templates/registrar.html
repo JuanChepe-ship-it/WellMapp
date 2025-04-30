@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="../static/css/registrar.css" />
+</head>
+
+<body>
+    <div class="form-container">
+        <h1>Registrar usuario</h1>
+        <form action="{{ url_for('registraradmin') }}" method="POST">
+            <input type="text" name="nombre" placeholder="Nombre Completo" required />
+            <input type="text" name="usuario" placeholder="Nombre de Usuario (Sin Espacios)" required />
+            <input type="text" name="cedula" placeholder="Número de Identificación Nacional" required />
+            <input type="email" name="correo" placeholder="Correo Electrónico" required />
+            <input type="tel" name="celular" placeholder="Número de Teléfono  (+57)" required />
+
+            <select name="rol" required>
+                <option value="" disabled selected>Selecciona un rol</option>
+                <option value="admin">Administrador</option>
+                <option value="usuario">Usuario</option>
+                <option value="editor">Editor</option>
+            </select>
+
+            <input type="password" name="contrasena" placeholder="Contraseña" required />
+            <input type="password" name="confirmar" placeholder="Confirmar Contraseña" required />
+
+
+            <button type="submit">Registrarse</button>
+
+            <div class="terms">
+                Al continuar, aceptas los <a href="#">términos de servicio</a> y la <a href="#">política de privacidad</a> de Wellmapp.
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

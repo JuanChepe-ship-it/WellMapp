@@ -1,0 +1,60 @@
+<div class="alert-panel" id="alert-panel">
+  <!-- Franja negra -->
+  <div class="black-bar"></div>
+
+  <!-- Franja blanca -->
+  <div class="top-bar">
+    <div class="inner-line"></div>
+    <button class="close-btn" id="close-panel_1" aria-label="Cerrar panel">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <line x1="18" y1="6" x2="6" y2="18" />
+        <line x1="6" y1="6" x2="18" y2="18" />
+      </svg>
+    </button>
+  </div>
+
+  <form class="alert-form" id="alert-form">
+    <h2>Informe de incidentes</h2>
+
+    <div class="form-group">
+      <select id="tipo" required>
+        <option value="">Tipo de reporte</option>
+        <option value="fuga">Fuga</option>
+        <option value="robo">Robo</option>
+        <option value="otro">Otro</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <div class="custom-file-upload">
+        <span class="file-text">Subir imagen</span>
+        <input type="file" id="imagen" accept="image/*" />
+        <label for="imagen" class="file-label">Elegir archivo</label>
+      </div>
+    </div>
+    <div class="form-group location-group">
+      <input type="text" id="ubicacion" placeholder="Ubicación" />
+      <i class="fas fa-map-marker-alt icono-ubicacion"></i>
+    </div>
+    <div class="form-group">
+      <textarea
+        id="descripcion"
+        rows="4"
+        placeholder="descripción..."
+        required
+      ></textarea>
+    </div>
+
+    <button type="submit" class="enviar-btn">Enviar</button>
+  </form>
+</div>

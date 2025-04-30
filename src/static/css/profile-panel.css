@@ -1,0 +1,230 @@
+/* ========================================================
+   📌 PANEL DE PERFIL (FULL RESPONSIVE & MOBILE OPTIMIZED)
+   ======================================================== */
+
+   .profile-panel {
+    position: fixed;
+    top: 0;
+    left: -100%; /* Oculto inicialmente */
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    background: #FFFFFF;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    transition: left 0.4s ease-in-out, opacity 0.4s ease-in-out;
+    z-index: 1000;
+    overflow-y: auto;
+    opacity: 0;
+    padding-bottom: 10vw; /* Espacio adicional para scroll */
+}
+
+.profile-panel.open {
+    left: 0;
+    opacity: 1;
+}
+
+.close-btn {
+    position: absolute;
+    top: 4vw;
+    right: 4vw;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1C1C1E;
+    font-size: 6vw;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.close-btn:hover {
+    transform: scale(1.1);
+    color: #FF3B30;
+}
+
+/* Contenedor del perfil */
+.profile-card {
+    position: relative;
+    background: #FFFFFF;
+    border-radius: 5vw;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    padding: 6vw;
+    text-align: center;
+    margin: 15vw auto;
+    width: 90%;
+}
+
+/* Foto de perfil */
+.profile-picture {
+    position: relative;
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+    background: #FFFFFF;
+    border: 0.5vw solid #C6C6C8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Detalles del perfil */
+.profile-details {
+    margin-top: 4vw;
+}
+
+.profile-name {
+    font-size: 5vw;
+    font-weight: 700;
+    color: #1C1C1E;
+    margin-bottom: 2vw;
+}
+
+.profile-role {
+    font-size: 3.5vw;
+    color: #8E8E93;
+}
+
+/* Opciones del menú */
+.profile-menu {
+    margin-top: 6vw;
+    padding: 0;
+    list-style: none;
+}
+
+.profile-menu li {
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+    font-size: 4vw;
+    padding: 4vw;
+    cursor: pointer;
+    border-bottom: 1px solid #E5E5EA;
+    transition: background 0.3s ease;
+}
+
+.profile-menu li:last-child {
+    border-bottom: none;
+}
+
+.profile-menu li img {
+    width: 6vw;
+    height: 6vw;
+}
+
+.profile-menu li:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+/* Botón de modo oscuro */
+.dark-mode-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4vw;
+    font-size: 4vw;
+    color: #1C1C1E;
+    border-bottom: 1px solid #E5E5EA;
+}
+
+.dark-mode-toggle input[type="checkbox"] {
+    display: none;
+}
+
+.slider {
+    position: relative;
+    width: 10vw;
+    height: 5vw;
+    background: #C6C6C8;
+    border-radius: 5vw;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+    width: 4vw;
+    height: 4vw;
+    background: #FFFFFF;
+    border-radius: 50%;
+    top: 0.5vw;
+    left: 0.5vw;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.toggle-switch:checked + .slider::before {
+    transform: translateX(5vw);
+}
+
+/* MEDIA QUERIES: Optimización para pantallas grandes */
+@media (min-width: 768px) {
+    .profile-panel {
+        max-width: 400px;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .close-btn {
+        font-size: 1.5rem;
+    }
+
+    .profile-card {
+        padding: 2rem;
+        margin: 2rem auto;
+    }
+
+    .profile-picture {
+        width: 120px;
+        height: 120px;
+        border-width: 2px;
+    }
+
+    .profile-name {
+        font-size: 1.5rem;
+    }
+
+    .profile-role {
+        font-size: 1rem;
+    }
+
+    .profile-menu li {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    .profile-menu li img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .dark-mode-toggle {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    .slider {
+        width: 40px;
+        height: 20px;
+    }
+
+    .slider::before {
+        width: 16px;
+        height: 16px;
+        top: 2px;
+        left: 2px;
+    }
+
+    .toggle-switch:checked + .slider::before {
+        transform: translateX(20px);
+    }
+}

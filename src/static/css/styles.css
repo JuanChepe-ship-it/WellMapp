@@ -1,0 +1,242 @@
+/* ==========================
+   IMPORTACIÓN DE ESTILOS
+   ========================== */
+   @import url('./profile-panel.css');
+   @import url('./alert-panel.css');
+   @import url('./fichat-tecnica-panel.css');
+   
+   /* ==========================
+      RESET DE ESTILOS
+      ========================== */
+   * {
+       box-sizing: border-box;
+       font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", sans-serif;
+       margin: 0;
+       padding: 0;
+   }
+   
+   body {
+       background-color: #FFFFFF;
+       min-height: 100vh;
+       animation: fadeInBody 0.6s ease-in-out;
+       position: relative;
+       overflow: hidden;
+   }
+   
+   @keyframes fadeInBody {
+       from {
+           opacity: 0;
+           transform: translateY(20px);
+       }
+       to {
+           opacity: 1;
+           transform: translateY(0);
+       }
+   }
+   
+   li {
+       list-style-type: none;
+   }
+   
+   /* ==========================
+      CONTENEDOR PRINCIPAL DE LA APP
+      ========================== */
+   .app-container {
+       width: 100%;
+       height: 100vh;
+       position: relative;
+       padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+       overflow: hidden;
+   }
+   
+   /* ==========================
+      CONTENEDOR DEL MAPA
+      ========================== */
+   .map-container {
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       z-index: 0;
+       overflow: hidden;
+       animation: fadeInContainer 0.8s ease-out;
+   }
+   
+   /* Leaflet custom */
+   .map-container .leaflet-top,
+   .map-container .leaflet-bottom {
+       z-index: 1 !important;
+   }
+   
+   .map-container .leaflet-control-zoom {
+       display: none;
+   }
+   
+   .map-container .leaflet-control-attribution {
+       font-size: 8px;
+       opacity: 0.7;
+   }
+   
+   /* ==========================
+      BOTONES DEL MENÚ PRINCIPAL
+      ========================== */
+   .menu-toggle,
+   .menu-vista,
+   .menu-alerta,
+   .menu-machine {
+       position: absolute;
+       z-index: 10;
+       background: none;
+       border: none;
+       box-shadow: none;
+       padding: 0;
+       cursor: pointer;
+   }
+   
+   .menu-toggle {
+       top: 20px;
+       left: 0px;
+   }
+   
+   .menu-vista {
+       bottom: 80px;
+       left: 10px;
+   }
+   
+   .menu-alerta {
+       bottom: 80px;
+       right: 10px;
+   }
+   
+   .menu-machine {
+       bottom: 150px;
+       right: 10px;
+   }
+   
+   .menu-toggle img,
+   .menu-toggle svg,
+   .menu-vista img,
+   .menu-vista svg,
+   .menu-alerta img,
+   .menu-alerta svg,
+   .menu-machine img,
+   .menu-machine svg {
+       width: 17vw;
+       height: 17vw;
+   }
+   
+   .menu-toggle img,
+   .menu-toggle svg {
+       width: 20vw;
+       height: 20vw;
+   }
+   
+   /* ==========================
+      BARRA DE BÚSQUEDA
+      ========================== */
+   .search-container {
+       position: absolute;
+       bottom: 20px;
+       left: 0;
+       width: 100%;
+       padding: 0 20px;
+       display: flex;
+       z-index: 5;
+   }
+   
+   .search-form {
+       width: 100%;
+       display: flex;
+       height: 50px;
+       border-radius: 50px;
+       overflow: hidden;
+       background-color: #fff;
+       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+   }
+   
+   .voice-btn,
+   .search-btn {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       border: none;
+       cursor: pointer;
+   }
+   
+   .voice-btn {
+       background: none;
+       padding: 0 5px 0 15px;
+   }
+   
+   .search-btn {
+       width: 50px;
+       height: 100%;
+       background-color: #1C1C1E;
+       border-radius: 0 50px 50px 0;
+   }
+   
+   .search-input {
+       flex: 1;
+       height: 100%;
+       border: none;
+       padding: 0 15px 0 5px;
+       font-size: 16px;
+       color: #333;
+   }
+   
+   .search-input::placeholder {
+       color: #666;
+       font-weight: 500;
+   }
+   
+   .search-input:focus {
+       outline: none;
+   }
+   
+   .mic-icon,
+   .search-icon {
+       width: 20px;
+       height: 20px;
+   }
+   
+   .mic-icon.listening {
+       animation: pulse 1.5s infinite;
+   }
+   
+   /* ==========================
+      ANIMACIONES
+      ========================== */
+   @keyframes fadeInContainer {
+       from {
+           opacity: 0;
+           transform: translateY(10px);
+       }
+       to {
+           opacity: 1;
+           transform: translateY(0);
+       }
+   }
+   
+   /* MEDIA QUERIES: OPTIMIZACIÓN DESKTOP */
+@media (min-width: 768px) {
+    h1 {
+      font-size: 1.8rem;
+    }
+  
+    form input,
+    form select {
+      font-size: 1rem;
+      padding: 16px;
+    }
+  
+    button {
+      font-size: 1rem;
+      padding: 15px;
+    }
+  
+    .terms {
+      font-size: 0.875rem;
+    }
+  }
+  

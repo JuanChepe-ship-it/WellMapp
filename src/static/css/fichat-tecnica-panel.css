@@ -1,0 +1,51 @@
+
+    /* ============================
+   panel ficha tecnica
+   ============================ */
+   .machine-panel {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    background-color: #f2f2f7;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+    padding: 0;
+    overflow-y: auto;
+}
+
+.machine-panel.open {
+    right: 0;
+}
+
+.machine-content {
+    padding: 1.5rem;
+}
+
+.machine-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.machine-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.machine-info div {
+    background-color: #fff;
+    padding: 0.75rem;
+    border-radius: 999px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    
+}
+

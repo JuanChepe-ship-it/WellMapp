@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mapa con Búsqueda por Voz</title>
+
+    <!-- 🌐 Estilos -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/styles.css" />
+  </head>
+
+  <body>
+    <div class="app-container">
+      <!-- 🔘 Botones flotantes -->
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+        <img src="../static/img/menu.svg" alt="" />
+      </button>
+
+      <div class="menu-vista" id="menu-vista">
+        <img src="../static/img/vista.svg" alt="Vista" />
+      </div>
+
+      <div class="menu-alerta" id="menu-alerta">
+        <img src="../static/img/alerta.svg" alt="Alerta" />
+      </div>
+
+      <div class="menu-machine" id="menu-machine">
+        <img src="../static/img/machine.svg" alt="Máquina" />
+      </div>
+
+      <!-- 🗺️ Mapa -->
+      <section
+        class="map-container"
+        id="map"
+        aria-label="Mapa principal"
+      ></section>
+
+      <!-- 🎙️ Buscador con Voz -->
+      <section class="search-container" aria-label="Buscar destino por voz">
+        <form id="search-form" class="search-form">
+          <button
+            type="button"
+            class="voice-btn"
+            id="voice-btn"
+            aria-label="Iniciar dictado por voz"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#1C1C1E"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="mic-icon"
+              id="mic-icon"
+            >
+              <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z" />
+              <path d="M19 10v2a7 7 0 0 1-14 0v-2" />
+              <line x1="12" y1="19" x2="12" y2="22" />
+            </svg>
+          </button>
+
+          <input
+            type="text"
+            class="search-input"
+            id="search-input"
+            placeholder="¿A dónde vas? ..."
+            aria-label="Buscar destino"
+          />
+
+          <button type="submit" class="search-btn" aria-label="Buscar">
+            <img src="../static/img/search.svg" alt="Buscar" />
+          </button>
+        </form>
+      </section>
+    </div>
+    <!-- 📜 Scripts -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script type="module" src="../static/js/script.js"></script>
+  </body>
+</html>
