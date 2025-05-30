@@ -1,29 +1,74 @@
- WellMapp
- 
-Descripción
-Aplicación móvil que proporciona servicios de geolocalización (GPS) específicamente diseñados para los obreros que trabajan en los pozos petroleros de Ecopetrol. Esta herramienta permite el seguimiento en tiempo real de la ubicación del personal en campo, mejorando la seguridad, coordinación y eficiencia operativa en las instalaciones petroleras.
-Características principales
+# 📍 WellMapp
 
-Seguimiento en tiempo real de la ubicación de trabajadores
-Navegación optimizada entre pozos petroleros
-Alertas de seguridad para zonas de riesgo
-Interfaz intuitiva adaptada para uso en campo
+**Aplicación móvil para geolocalización en campo, diseñada especialmente para los obreros de pozos petroleros de Ecopetrol.**
 
-Estado del proyecto
-Proyecto en fase inicial de desarrollo, actualmente implementando la funcionalidad base del GPS.
-Tecnologías utilizadas
+---
 
-Python
-HTML/CSS/JavaScript
-Frameworks y librerías (detalles por agregar)
+## 🧭 Descripción
 
-Instalación y configuración
-(Instrucciones de instalación por agregar)
-Uso
-(Instrucciones de uso por agregar)
-Contribución
-Si deseas contribuir a este proyecto, por favor crea un fork y envía un pull request con tus cambios.
-Licencia
-(Información de licencia por agregar)
-Contacto
-Desarrollado por JuanChepe-ship-it
+**WellMapp** proporciona servicios de geolocalización en tiempo real para el personal que trabaja en instalaciones petroleras. Su objetivo es mejorar la **seguridad**, la **coordinación operativa** y la **eficiencia logística** mediante el uso de tecnología móvil de fácil acceso.
+
+---
+
+## ✨ Características principales
+
+- 📌 **Seguimiento en tiempo real** de la ubicación de los trabajadores
+- 🛣️ **Navegación optimizada** entre pozos petroleros
+- 🚨 **Alertas de seguridad** en zonas de riesgo
+- 📱 **Interfaz intuitiva**, diseñada para ambientes de campo
+
+---
+
+## 🚧 Estado del Proyecto
+
+🔧 **Fase actual:** Desarrollo inicial  
+✅ Funcionalidad base de **GPS en implementación**
+
+---
+
+## 🛠️ Tecnologías utilizadas
+
+- **Lenguajes:** Python, HTML, CSS, JavaScript
+- **Frameworks/Librerías:** (en construcción - pronto se agregarán detalles)
+
+---
+
+## 📦 Instalación y configuración
+
+⚠️ Instrucciones por agregar  
+*(Próximamente se incluirá una guía paso a paso para la instalación local del proyecto.)*
+
+---
+
+## 🚀 Uso
+
+⚠️ Instrucciones por agregar  
+*(Se añadirá documentación sobre cómo ejecutar y probar la app en dispositivos móviles.)*
+
+---
+
+## 🤝 Contribución
+
+¿Quieres aportar a este proyecto?
+
+1. Haz un **fork**
+2. Crea una nueva rama: `git checkout -b feature/nueva-funcionalidad`
+3. Realiza tus cambios
+4. Envía un **pull request** con una breve descripción
+
+---
+
+## 📄 Licencia
+
+ℹ️ Información de licencia en proceso de definición.
+
+---
+
+## 👤 Contacto
+
+Desarrollado por **JuanChepe-ship-it** **Jhonatan-28** **Juan-Andres** **Devera**  
+🔗 GitHub: [@JuanChepe-ship-it](https://github.com/JuanChepe-ship-it)
+
+---
+
+> “La innovación comienza donde terminan los caminos convencionales.” 🚜📡
