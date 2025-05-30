@@ -12,7 +12,6 @@
 
 ## ✨ Características principales
 
-- 📌 **Seguimiento en tiempo real** de la ubicación de los trabajadores
 - 🛣️ **Navegación optimizada** entre pozos petroleros
 - 🚨 **Alertas de seguridad** en zonas de riesgo
 - 📱 **Interfaz intuitiva**, diseñada para ambientes de campo
@@ -21,15 +20,13 @@
 
 ## 🚧 Estado del Proyecto
 
-🔧 **Fase actual:** Desarrollo inicial  
-✅ Funcionalidad base de **GPS en implementación**
+🔧 **Fase actual:** 80% Completado  
 
 ---
 
 ## 🛠️ Tecnologías utilizadas
 
 - **Lenguajes:** Python, HTML, CSS, JavaScript
-- **Frameworks/Librerías:** (en construcción - pronto se agregarán detalles)
 
 ---
 
@@ -66,8 +63,11 @@
 
 ## 👤 Contacto
 
-Desarrollado por **JuanChepe-ship-it** **Jhonatan-28** **Juan-Andres** **Devera**  
+Desarrollado por **JuanChepe-ship-it** **Jhonatan-28** **juansena271** **sevazter**  
 🔗 GitHub: [@JuanChepe-ship-it](https://github.com/JuanChepe-ship-it)
+🔗 GitHub: [@Jhonatan-28](https://github.com/Jhonatan-28)
+🔗 GitHub: [@juansena271](https://github.com/juansena271)
+🔗 GitHub: [@sevazter](https://github.com/sevazter)
 
 ---
 
